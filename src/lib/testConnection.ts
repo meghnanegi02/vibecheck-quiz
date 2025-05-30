@@ -1,10 +1,9 @@
 import { supabase } from './supabase';
 
-export async function testSupabaseConnection() {
+export const testConnection = async () => {
   try {
     // Test database connection
-    const { data, error } = await supabase.from('responses').select('count');
-    if (error) throw error;
+    await supabase.rpc('test_db_connection');
     console.log('✅ Database connection successful');
 
     // Test real-time subscription

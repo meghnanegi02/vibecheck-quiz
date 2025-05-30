@@ -2,12 +2,13 @@
 
 import { useEffect, useState } from 'react';
 import { createClientComponentClient } from '@supabase/auth-helpers-nextjs';
+import { type Session } from '@supabase/supabase-js';
 import { QuizProvider } from '@/context/QuizContext';
 import { QuizSelector } from '@/components/QuizSelector';
 import { Auth } from '@/components/Auth';
 
 export default function Home() {
-  const [session, setSession] = useState<any>(null);
+  const [session, setSession] = useState<Session | null>(null);
   const [loading, setLoading] = useState(true);
   const supabase = createClientComponentClient();
 

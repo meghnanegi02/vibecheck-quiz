@@ -99,7 +99,7 @@ export function QuizProvider({ children }: { children: ReactNode }) {
           }
 
           const data = await res.json();
-          setAiMoodSummary(data.mood);
+          setDetectedMood(data.mood);
 
           const result: QuizResult = {
             quizId: currentQuiz!.id,

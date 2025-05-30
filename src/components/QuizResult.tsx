@@ -1,9 +1,10 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import { UserResponse } from '@/types/quiz';
 
 interface QuizResultProps {
   quizTitle: string;
-  answers: any[];
+  answers: UserResponse[];
 }
 
 export function QuizResult({ quizTitle, answers }: QuizResultProps) {

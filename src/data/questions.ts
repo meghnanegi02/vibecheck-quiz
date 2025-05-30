@@ -36,11 +36,11 @@ const questions: Question[] = [
     ],
   },
   {
-    text: "How’s your energy level right now?",
+    text: "How's your energy level right now?",
     options: [
-      { text: "I’m bouncing off the walls!", scores: { Energetic: 2 } },
-      { text: "I’m calm and steady", scores: { Chill: 2 } },
-      { text: "I’m dragging my feet", scores: { Low: 2 } },
+      { text: "I'm bouncing off the walls!", scores: { Energetic: 2 } },
+      { text: "I'm calm and steady", scores: { Chill: 2 } },
+      { text: "I'm dragging my feet", scores: { Low: 2 } },
     ],
   },
   {
@@ -63,7 +63,7 @@ const moodThresholds: MoodThreshold[] = [
   {
     mood: "Energetic",
     minScore: 4,
-    description: "You're buzzing with energy! It’s a great day to be productive 💪",
+    description: "You're buzzing with energy! It's a great day to be productive 💪",
   },
   {
     mood: "Low",
@@ -88,12 +88,12 @@ const moodThresholds: MoodThreshold[] = [
   {
     mood: "Independent",
     minScore: 4,
-    description: "You’re in your own lane and loving it 🛣️",
+    description: "You're in your own lane and loving it 🛣️",
   },
   {
     mood: "Confident",
     minScore: 3,
-    description: "You’re radiating confidence. Nothing can stop you 🔥",
+    description: "You're radiating confidence. Nothing can stop you 🔥",
   },
 ];
 
